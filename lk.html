@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - AUTOKBR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .dashboard {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://static.vecteezy.com/system/resources/previews/026/303/316/large_2x/car-rent-logo-template-sedan-vector.jpg" alt="AUTOKBR" width="200" height="100">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="lk.html" class="active"><i class="fas fa-user-circle"></i> Кабинет</a></li>
+                    <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Выход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1><i class="fas fa-user-circle"></i> Личный кабинет</h1>
+        <p>Добро пожаловать, Иван Иванов!</p>
+        
+        <div class="dashboard">
+            <!-- Вертикальное меню -->
+            <aside class="sidebar">
+                <nav class="vertical-menu">
+                    <a href="create_request.html" class="menu-item">
+                        <i class="fas fa-plus-circle"></i> Новая заявка
+                    </a>
+                    <a href="my_requests.html" class="menu-item active">
+                        <i class="fas fa-list"></i> Мои заявки
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-car"></i> Мои аренды
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-cog"></i> Настройки
+                    </a>
+                    <a href="logout.html">
+                        <i class="fas fa-sign-out-alt"></i> Выход
+                    </a>
+                </nav>
+            </aside>
+            
+            
+            <div class="content">
+                <h2>Мои заявки</h2>
+                
+                <div class="filters">
+                    <select id="status-filter" class="form-control">
+                        <option value="all">Все заявки</option>
+                        <option value="Новая">Только новые</option>
+                        <option value="Решена">Решенные</option>
+                        <option value="Отклонена">Отклоненные</option>
+                    </select>
+                </div>
+                
+                <div class="requests-list">
+                    <!-- Заявка 1 -->
+                    <div class="request-card" data-status="Новая">
+                        <div class="request-header">
+                            <span class="request-date">15.12.2025 14:30</span>
+                            <span class="status-badge status-новая">Новая</span>
+                        </div>
+                        <h3>Проблема с кондиционером</h3>
+                        <p>В автомобиле Renault Logan не работает кондиционер</p>
+                        <div class="request-footer">
+                            <span class="request-category">Техническая проблема</span>
+                            <button class="btn btn-danger btn-sm delete-btn">
+                                <i class="fas fa-trash"></i> Удалить
+                            </button>
+                        </div>
+                    </div>
+                    
+                  
+                    <div class="request-card" data-status="Решена">
+                        <div class="request-header">
+                            <span class="request-date">10.12.2025 11:20</span>
+                            <span class="status-badge status-решена">Решена</span>
+                        </div>
+                        <h3>Просрочка возврата</h3>
+                        <p>Не могу вовремя вернуть автомобиль из-за пробок</p>
+                        <div class="request-footer">
+                            <span class="request-category">Бронирование</span>
+                            <span class="request-solved"><i class="fas fa-check"></i> Решено</span>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="request-card" data-status="Отклонена">
+                        <div class="request-header">
+                            <span class="request-date">05.12.2025 09:15</span>
+                            <span class="status-badge status-отклонена">Отклонена</span>
+                        </div>
+                        <h3>Скидка постоянному клиенту</h3>
+                        <p>Прошу предоставить скидку как постоянному клиенту</p>
+                        <div class="request-footer">
+                            <span class="request-category">Оплата</span>
+                            <span class="request-declined"><i class="fas fa-times"></i> Отклонено</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p><i class="fas fa-phone"></i> +7 (800) 555-35-35</p>
+                    <p><i class="fas fa-headset"></i> Поддержка клиентов</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="index.html">Главная</a>
+                    <a href="lk.html">Личный кабинет</a>
+                    <a href="admin.html">Админ-панель</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

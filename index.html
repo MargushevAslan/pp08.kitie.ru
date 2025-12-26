@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOKBR - Прокат автомобилей</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+   
+        .visitor-counter { 
+            background: linear-gradient(135deg, #1a56db, #1e40af); 
+            color: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            margin: 20px 0; 
+            text-align: center; 
+        }
+        .news-img { transition: transform 0.5s ease; }
+        .news-img:hover { transform: scale(1.1); }
+        .news-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 20px; 
+            margin-top: 30px; 
+        }
+    </style>
+</head>
+<body>
+   
+    <header class="header">
+        <div class="container header-container">
+            <!-- Логотип -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://static.vecteezy.com/system/resources/previews/026/303/316/large_2x/car-rent-logo-template-sedan-vector.jpg" alt="AUTOKBR" width="200" height="100">
+                </a>
+            </div>
+            
+         
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="C:\Users\margu\Downloads\456x342.jpg"><i class="fas fa-car"></i> Автомобили</a></li>
+                    <li><a href=""><i class="fas fa-percentage"></i> Цены</a></li>
+                    <li><a href=""><i class="fas fa-map-marker-alt"></i> Контакты</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Войти</a></li>
+                    <li><a href="register.html"><i class="fas fa-user-plus"></i> Регистрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="hero">
+            <h1>Аренда автомобилей с AUTOKBR</h1>
+            <p>Более 100 автомобилей в вашем распоряжении по лучшим ценам</p>
+            <a href="register.html" class="btn btn-primary">
+                <i class="fas fa-key"></i> Начать аренду
+            </a>
+        </section>
+
+
+        <section class="visitor-counter">
+            <h2><i class="fas fa-users"></i> Посетителей сегодня:</h2>
+            <div id="visitor-count">1,247</div>
+            <p>Обновляется каждые 5 секунд</p>
+        </section>
+
+ 
+        <section class="news-section">
+            <h2><i class="fas fa-newspaper"></i> Последние новости</h2>
+            <div class="news-grid">
+                
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://avatars.mds.yandex.net/get-autoru-vos/2045905/ee84cfdeb536e5b6bcb84b708030a438/1200x900"  alt="Новая модель в парке" class="news-img">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">15.12.2025</span>
+                        <span class="news-category">Автопарк</span>
+                        <h3>Новые  Audi Q5 II (FY) в нашем парке</h3>
+                        <p>Пополнение автопарка электромобилями</p>
+                    </div>
+                </div>
+                
+               
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://a.d-cd.net/7KnwFQfJqkpct3UzP_JPErdRspw-1920.jpg" alt="Специальное предложение" class="news-img">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">10.12.2025</span>
+                        <span class="news-category">Акция</span>
+                        <h3>Скидка 20% на зимнюю аренду</h3>
+                        <p>Специальное предложение до конца января</p>
+                    </div>
+                </div>
+                
+              
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://avatars.mds.yandex.net/get-altay/14021655/2a000001928a0467fed22b3e797bc9ebb259/XXL_height" alt="Новый офис" class="news-img">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">05.12.2025</span>
+                        <span class="news-category">Развитие</span>
+                        <h3>Открытие нового офиса в центре</h3>
+                        <p>Теперь мы ближе к вам</p>
+                    </div>
+                </div>
+                
+        
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://www.delta.ru/media/blog/integrirovannaya-sistema-bezopasnosti-1.jpg" alt="Безопасность" class="news-img">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">01.12.2025</span>
+                        <span class="news-category">Безопасность</span>
+                        <h3>Обновленная система безопасности</h3>
+                        <p>Все автомобили оснащены новыми трекерами</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://static.vecteezy.com/system/resources/previews/026/303/316/large_2x/car-rent-logo-template-sedan-vector.jpg" alt="AUTOKBR" width="" height="60">
+                </div>
+                <div class="footer-info">
+                    <p><i class="fas fa-phone"></i> +7 (800) 555-35-35</p>
+                    <p><i class="fas fa-envelope"></i> info@autokbr.ru</p>
+                    <p><i class="fas fa-clock"></i> Круглосуточно</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="index.html">Главная</a>
+                    <a href="login.html">Вход</a>
+                    <a href="register.html">Регистрация</a>
+                    <a href="admin.html">Администрирование</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AUTOKBR. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="counter.js"></script>
+</body>
+</html>
